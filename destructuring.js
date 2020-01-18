@@ -79,8 +79,8 @@ return utah + california + texas + arizona
 */
 
 function ingredients({carb, fat, protein}){ 
-newIngredients = [carb, fat, protein]
-return newIngredients
+  newIngredients = [carb, fat, protein]
+  return newIngredients
 }
 
 
