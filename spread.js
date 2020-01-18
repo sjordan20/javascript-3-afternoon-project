@@ -11,27 +11,21 @@
 /* Use the spread operator to create a copy of the product object below.  Name the copy "productCopy" */
 
 let product = {
-  id: 54, 
-  name: 'santa hat',
+  id: 54,
+  name: "santa hat",
   price: 6,
-  imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
-}
+  imageUrl: "https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg"
+};
 
-// code here
-
-
-
+const productCopy = { ...product };
 
 ////////// PROBLEM 2 //////////
 
 /* Use the spread operator to create a copy of the colors array below.  Name the copy "colorsCopy" */
 
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
-// code here
-
-
-
+const colorsCopy = [...colors];
 
 ////////// PROBLEM 3 //////////
 
@@ -43,14 +37,12 @@ function addNums(num1, num2, num3) {
   return num1 + num2 + num3;
 }
 
-// code here
-
-
+const result = addNums(...numbers);
 ////////// PROBLEM 4 //////////
 
 /* Using the spread operator, concatentate the two arrays below and save it to a variable named "combinedArrays" */
 
-let arr1 = ['dog', 'chameleon', 'monkey'];
-let arr2 = ['bear', 'tiger', 'liger'];
+let arr1 = ["dog", "chameleon", "monkey"];
+let arr2 = ["bear", "tiger", "liger"];
 
-// code here
+let combinedArrays = [...arr1, ...arr2];
